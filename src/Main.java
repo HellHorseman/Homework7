@@ -84,7 +84,15 @@ public class Main {
     }
     public static void task7 () {
         System.out.println("Задача 7");
-
+    int friday = 3;
+    int day = 1;
+    int month = 31;
+    while (day <= month) {
+        day++;
+        if ((day - friday) % 7 == 0) {
+                System.out.println("Сегодня пятница, " + day +"-е число. Необходимо подготовить отчет");
+        }
+    }
     }
     public static void task8 () {
         System.out.println("Задача 8");
