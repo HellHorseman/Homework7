@@ -37,7 +37,13 @@ public class Main {
     }
     public static void task3 () {
         System.out.println("Задача 3");
-
+    int countryPopulation = 12_000_000;
+    int yearBirthrate = 17 * 12_000;
+    int yearDeathRate = 8 * 12_000;
+    for (int year = 1; year <= 10; year++) {
+        countryPopulation = countryPopulation + (yearBirthrate - yearDeathRate);
+        System.out.println("Год " + year + ", численность населения составляет " + countryPopulation);
+    }
     }
     public static void task4 () {
         System.out.println("Задача 4");
