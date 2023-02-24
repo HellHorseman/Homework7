@@ -69,7 +69,18 @@ public class Main {
     }
     public static void task6 () {
         System.out.println("Задача 6");
-
+        int deposit = 15_000;
+        int monthlyInterest = 7;
+        int totalTime = 9 * 12;
+        int month = 1;
+        while (month <= totalTime) {
+            int percents = deposit / 100 * monthlyInterest;
+            deposit = deposit + percents;
+            month++;
+            if (month % 6 == 0) {
+                System.out.println("Месяц " + month + ", накоплено " + deposit + " рублей");
+            }
+        }
     }
     public static void task7 () {
         System.out.println("Задача 7");
