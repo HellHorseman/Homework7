@@ -20,12 +20,20 @@ public class Main {
         month++;
         total = total + putAside;
     }
-
     }
 
     public static void task2 () {
         System.out.println("Задача 2");
-
+    int i = 0;
+    while (i < 10) {
+        i++;
+        System.out.print(i + " ");
+    }
+        System.out.println();
+    for (int ii = 10; ii >= 1; ii--) {
+        System.out.print(ii + " ");
+    }
+        System.out.println();
     }
     public static void task3 () {
         System.out.println("Задача 3");
