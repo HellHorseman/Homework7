@@ -96,6 +96,16 @@ public class Main {
     }
     public static void task8 () {
         System.out.println("Задача 8");
+    int year = 0;
+    int twoHundredAgo = 1823;
+    int hundredAfter = 2123;
+    while (year <= hundredAfter) {
+        year++;
+        if (year % 79 == 0 && year >= twoHundredAgo) {
+            System.out.println(year);
+        }
+    }
+
 
     }
 }
