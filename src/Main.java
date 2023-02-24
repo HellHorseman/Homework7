@@ -47,7 +47,13 @@ public class Main {
     }
     public static void task4 () {
         System.out.println("Задача 4");
-
+    int deposit = 15_000;
+    int monthGrow = 7;
+    for (int i = 1; deposit <= 12_000_000; i++) {
+        int percents = deposit / 100 * monthGrow;
+        deposit = deposit + percents;
+        System.out.println("Месяц " + i + ", накоплено " + deposit + " рублей");
+    }
     }
     public static void task5 () {
         System.out.println("Задача 5");
